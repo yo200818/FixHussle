@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book a tech repair or service with FixHussle — fast, easy, online booking." />
+  <title>Book a Repair — FixHussle</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <canvas id="particles-canvas" style="position:fixed;inset:0;pointer-events:none;z-index:0;opacity:0.5;"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">FixHussle</a>
+      <ul class="nav-links">
+        <li><a href="booking.html">Book Now</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="tel:+919449205239" class="btn btn-ghost btn-sm">Call Us</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="booking.html">Book Now</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-cta">
+      <a href="tel:+919449205239" class="btn btn-ghost" style="width:100%;justify-content:center;">📞 Call Us</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- Page Hero -->
+    <div class="page-hero" style="padding-bottom:60px;">
+      <div class="container">
+        <span class="section-label reveal" style="justify-content:center;">Online Booking</span>
+        <h1 class="reveal reveal-delay-1">Book a <span class="text-gradient">Repair</span></h1>
+        <p class="reveal reveal-delay-2">Fill out the form below and we'll confirm your appointment.</p>
+      </div>
+    </div>
+
+    <!-- Booking Layout -->
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="booking-layout">
+
+          <!-- Left info panel -->
+          <aside class="booking-info reveal">
+            <h2>How It Works</h2>
+            <p>Book in minutes. We handle the rest with expertise and care.</p>
+
+            <div class="booking-steps">
+              <div class="booking-step">
+                <div class="step-num">1</div>
+                <div class="step-text">
+                  <h4>Submit Your Request</h4>
+                  <p>Fill in the form with your device and issue details.</p>
+                </div>
+              </div>
+              <div class="booking-step">
+                <div class="step-num">2</div>
+                <div class="step-text">
+                  <p>A technician will contact you to confirm the appointment.</p>
+                </div>
+              </div>
+              <div class="booking-step">
+                <div class="step-num">3</div>
+                <div class="step-text">
+                  <h4>Drop-In</h4>
+                  <p>Visit our store</p>
+                </div>
+              </div>
+              <div class="booking-step">
+                <div class="step-num">4</div>
+                <div class="step-text">
+                  <h4>Repair &amp; Return</h4>
+                  <p>Most repairs done same-day. Warranty certificate provided.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trust badges -->
+            <div style="margin-top:40px;display:flex;flex-direction:column;gap:12px;">
+              <div style="display:flex;align-items:center;gap:10px;font-size:0.875rem;color:var(--text-secondary);">
+                <span style="color:var(--accent-cyan);">✓</span> Free diagnosis — no commitment
+              </div>
+              <div style="display:flex;align-items:center;gap:10px;font-size:0.875rem;color:var(--text-secondary);">
+                <span style="color:var(--accent-cyan);">✓</span> 90-day repair warranty
+              </div>
+              <div style="display:flex;align-items:center;gap:10px;font-size:0.875rem;color:var(--text-secondary);">
+                <span style="color:var(--accent-cyan);">✓</span> No fix, no fee policy
+              </div>
+              <div style="display:flex;align-items:center;gap:10px;font-size:0.875rem;color:var(--text-secondary);">
+                <span style="color:var(--accent-cyan);">✓</span> Genuine OEM parts used
+              </div>
+              <div style="display:flex;align-items:center;gap:10px;font-size:0.875rem;color:var(--text-secondary);">
+                <span style="color:var(--accent-cyan);">✓</span> Your data stays private
+              </div>
+            </div>
+          </aside>
+
+          <!-- Form card -->
+          <div class="glass-card booking-form-card reveal reveal-delay-2">
+
+            <!-- Form content -->
+            <div class="booking-form-content">
+              <h3 style="margin-bottom:8px;">Repair Request Form</h3>
+              <p style="margin-bottom:32px;font-size:0.9rem;">All fields are required. We'll never share your data.</p>
+
+              <form id="booking-form" novalidate>
+                <div class="form-grid">
+
+                  <!-- Name -->
+                  <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Rahul Sharma"
+                      autocomplete="name"
+                    />
+                    <span class="error-msg" role="alert"></span>
+                  </div>
+
+                  <!-- Phone -->
+                  <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder="+91 98765 43210"
+                      autocomplete="tel"
+                    />
+                    <span class="error-msg" role="alert"></span>
+                  </div>
+
+                  <!-- Email -->
+                  <div class="form-group full-width">
+                    <label for="email">Email Address</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="rahul@email.com"
+                      autocomplete="email"
+                    />
+                    <span class="error-msg" role="alert"></span>
+                  </div>
+
+                  <!-- Service Type -->
+                  <div class="form-group">
+                    <label for="service">Service Type</label>
+                    <select id="service" name="service">
+                      <option value="">Select a service…</option>
+                      <option value="mobile-repair">Mobile Phone Repair</option>
+                      <option value="laptop-repair">Laptop Repair / Upgrade</option>
+                      <option value="pc-repair">PC Repair / Custom Build</option>
+                      <option value="networking">Network &amp; IT Setup</option>
+                      <option value="other">Other / Not Sure</option>
+                    </select>
+                    <span class="error-msg" role="alert"></span>
+                  </div>
+
+                  <!-- Device -->
+                  <div class="form-group">
+                    <label for="device">Device Brand &amp; Model</label>
+                    <input
+                      type="text"
+                      id="device"
+                      name="device"
+                      placeholder="e.g. Samsung Galaxy S23"
+                    />
+                    <span class="error-msg" role="alert"></span>
+                  </div>
+
+                  <!-- Problem -->
+                  <div class="form-group full-width">
+                    <label for="problem">Describe the Problem</label>
+                    <textarea
+                      id="problem"
+                      name="problem"
+                      placeholder="Describe the issue in detail — when did it start, what happens, any error messages…"
+                      rows="4"
+                    ></textarea>
+                    <span class="error-msg" role="alert"></span>
+                  </div>
+
+                  <!-- Date -->
+                  <div class="form-group">
+                    <label for="date">Preferred Date</label>
+                    <input
+                      type="date"
+                      id="date"
+                      name="date"
+                    />
+                    <span class="error-msg" role="alert"></span>
+                  </div>
+
+                  <!-- Address -->
+                  <div class="form-group">
+                    <label for="address">Your Address / Area</label>
+                    <input
+                      type="text"
+                      id="address"
+                      name="address"
+                      placeholder="e.g. Koramangala, Bengaluru"
+                      autocomplete="street-address"
+                    />
+                    <span class="error-msg" role="alert"></span>
+                  </div>
+
+                </div><!-- /.form-grid -->
+
+                <div class="form-submit-row">
+                  <button type="submit" class="btn btn-primary btn-lg btn-submit">
+                    <span class="submit-text">
+                      Confirm Booking
+                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M2 7.5h11M9 3l4 4.5L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <span class="submit-spinner"></span>
+                  </button>
+                  <p class="form-privacy">🔒 Your info is secure &amp; never sold.</p>
+                </div>
+              </form>
+            </div>
+
+            <!-- Success message (hidden until form submit) -->
+            <div class="success-message" role="status" aria-live="polite">
+              <div class="success-icon">✅</div>
+              <h3>Booking Confirmed!</h3>
+              <p style="margin-top:12px;color:var(--text-secondary);max-width:360px;margin-left:auto;margin-right:auto;">
+                Thank you! We've received your repair request and a technician will contact you within the hour to confirm your appointment.
+              </p>
+              <div style="margin-top:32px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+                <a href="index.html" class="btn btn-ghost">Back to Home</a>
+                <a href="services.html" class="btn btn-primary">Explore Services</a>
+              </div>
+            </div>
+
+          </div><!-- /.booking-form-card -->
+        </div><!-- /.booking-layout -->
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" style="padding-top:0;padding-bottom:100px;">
+      <div class="container">
+        <div class="section-header text-center reveal" style="margin:0 auto 48px;">
+          <span class="section-label">FAQs</span>
+          <h2>Common Questions</h2>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px;max-width:900px;margin:0 auto;">
+          <div class="glass-card reveal reveal-delay-1" style="padding:28px;">
+            <h4 style="margin-bottom:10px;font-size:1rem;">How long does a repair take?</h4>
+            <p style="font-size:0.9rem;">Most mobile and laptop repairs are completed within 2–4 hours. PC builds and network setups are quoted individually but typically done within the same business day.</p>
+          </div>
+          <div class="glass-card reveal reveal-delay-2" style="padding:28px;">
+            <h4 style="margin-bottom:10px;font-size:1rem;">What if you can't fix it?</h4>
+            <p style="font-size:0.9rem;">We follow a strict no fix, no fee policy. If we can't repair your device, you pay nothing — including the diagnostic fee.</p>
+          </div>
+          <div class="glass-card reveal reveal-delay-3" style="padding:28px;">
+            <h4 style="margin-bottom:10px;font-size:1rem;">Do you offer home pickup?</h4>
+            <p style="font-size:0.9rem;">Yes! For an additional ₹100–200 (based on distance), we offer doorstep pickup and delivery within Bengaluru.</p>
+          </div>
+          <div class="glass-card reveal reveal-delay-4" style="padding:28px;">
+            <h4 style="margin-bottom:10px;font-size:1rem;">Are the parts genuine?</h4>
+            <p style="font-size:0.9rem;">Absolutely. We use OEM-certified or brand-approved parts for all repairs. We'll never use counterfeit components without informing you first.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">FixHussle</div>
+          <p>Premium tech repair &amp; networking services in Bengaluru.</p>
+          <div class="footer-social">
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="services.html">Mobile Repair</a></li>
+            <li><a href="services.html">Laptop Repair</a></li>
+            <li><a href="services.html">PC Repair</a></li>
+            <li><a href="services.html">Network Setup</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul class="footer-links">
+            <li><a href="tel:+919449205239">+91 94492 05239</a></li>
+            <li><a href="mailto:fixhussle@gmail.com">fixhussle@gmail.com</a></li>
+            <li><a href="#">Vijayanagar, Bengaluru</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2025 FixHussle. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

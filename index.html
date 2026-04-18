@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FixHussle — Premium tech repair & networking services. Mobile, laptop, PC repair and professional networking setup." />
+  <title>FixHussle — Fix. Upgrade. Connect.</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-logo">FixHussle</div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+
+  <!-- Particle canvas -->
+  <canvas id="particles-canvas" style="position:fixed;inset:0;pointer-events:none;z-index:0;opacity:0.6;"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">FixHussle</a>
+      <ul class="nav-links">
+        <li><a href="booking.html">Book Now</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="booking.html" class="btn btn-primary btn-sm">Book a Repair</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav -->
+  <div class="mobile-nav" aria-hidden="true">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="booking.html">Book Now</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-cta">
+      <a href="booking.html" class="btn btn-primary" style="width:100%;justify-content:center;">Book a Repair</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="hero">
+      <div class="hero-glow-1"></div>
+      <div class="hero-glow-2"></div>
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <div class="hero-badge reveal">
+              <span class="badge"><span class="badge-dot"></span> Trusted by 2,000+ customers in Bengaluru</span>
+            </div>
+            <h1 class="hero-title reveal reveal-delay-1">
+              Fix. Upgrade.<br />
+              <span class="text-gradient">Connect.</span>
+              <span class="line-2">Your tech, perfected.</span>
+            </h1>
+            <p class="hero-desc reveal reveal-delay-2">
+              Expert mobile, laptop &amp; PC repairs with same-day turnaround.
+              Professional networking setups for homes and offices.
+              No jargon — just results.
+            </p>
+            <div class="hero-actions reveal reveal-delay-3">
+              <a href="booking.html" class="btn btn-primary btn-lg">
+                <span>Book a Repair</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="services.html" class="btn btn-ghost btn-lg">View Services</a>
+            </div>
+            <div class="hero-stats reveal reveal-delay-4">
+              <div class="stat-item">
+                <div class="stat-number"><span data-count="1500">0</span>+</div>
+                <div class="stat-label">Devices Fixed</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number"><span data-count="4.9">0</span>★</div>
+                <div class="stat-label">Avg. Rating</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number"><span data-count="98">0</span>%</div>
+                <div class="stat-label">Satisfaction</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-device-mockup">
+              <div class="mockup-ring mockup-ring-1"></div>
+              <div class="mockup-ring mockup-ring-2"></div>
+              <div class="mockup-ring mockup-ring-3"></div>
+              <div class="mockup-center"><img src="assets/images/FH Transparent 2.png" alt="FixHussle Logo"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SERVICES PREVIEW ═══ -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">What We Fix</span>
+          <h2>Services Built for the Modern World</h2>
+          <p>From cracked screens to enterprise networks — we handle it all with precision and care.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="glass-card service-card reveal reveal-delay-1">
+            
+            <h3>Mobile Repair</h3>
+            <p>Screen replacements, battery swaps, water damage recovery, charging port fixes and more — for all major brands.</p>
+            <a href="services.html" class="service-link">
+              Explore service
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </article>
+
+          <article class="glass-card service-card reveal reveal-delay-2">
+            
+            <h3>Laptop Repair</h3>
+            <p>Keyboard replacement, display fixes, thermal paste refresh, SSD upgrades, OS reinstallation &amp; virus removal.</p>
+            <a href="services.html" class="service-link">
+              Explore service
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </article>
+
+          <article class="glass-card service-card reveal reveal-delay-3">
+            
+            <h3>PC Repair &amp; Build</h3>
+            <p>Custom PC builds, GPU/RAM upgrades, PSU replacements, cable management, and full diagnostics.</p>
+            <a href="services.html" class="service-link">
+              Explore service
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </article>
+
+          <article class="glass-card service-card reveal reveal-delay-4">
+            
+            <h3>Network Setup</h3>
+            <p>Home &amp; office WiFi, LAN cabling, router configuration, mesh networks, VPN setup and IT infrastructure planning.</p>
+            <a href="services.html" class="service-link">
+              Explore service
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ WHY CHOOSE US ═══ -->
+    <section class="section" style="background: linear-gradient(180deg, transparent, rgba(41,121,255,0.03), transparent);">
+      <div class="container">
+        <div class="why-grid">
+          <div class="why-content">
+            <div class="section-header reveal">
+              <span class="section-label">Why FixHussle</span>
+              <h2>We're Different, and It Shows</h2>
+              <p>Every repair is backed by our craftsmanship guarantee. We treat your device like our own.</p>
+            </div>
+
+            <div class="why-features">
+              <div class="why-feature reveal reveal-delay-1">
+                <div class="why-feature-icon">⚡</div>
+                <div class="why-feature-text">
+                  <h4>Same-Day Service</h4>
+                  <p>Most repairs completed within 2–4 hours. We respect your time.</p>
+                </div>
+              </div>
+              <div class="why-feature reveal reveal-delay-2">
+                <div class="why-feature-icon">🛡️</div>
+                <div class="why-feature-text">
+                  <h4>90-Day Warranty</h4>
+                  <p>All repairs come with a 90-day parts &amp; labour warranty. Zero risk.</p>
+                </div>
+              </div>
+              <div class="why-feature reveal reveal-delay-3">
+                <div class="why-feature-icon">💎</div>
+                <div class="why-feature-text">
+                  <h4>Genuine Parts Only</h4>
+                  <p>We use OEM-certified components so quality is never compromised.</p>
+                </div>
+              </div>
+              <div class="why-feature reveal reveal-delay-4">
+                <div class="why-feature-icon">🔍</div>
+                <div class="why-feature-text">
+                  <h4>Free Diagnostics</h4>
+                  <p>Bring your device in for a free assessment. No fix, no fee policy.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="why-visual reveal">
+            <div class="glass-card why-visual-card">
+              <div class="rating-display">
+                <div class="rating-number">4.9</div>
+                <div class="stars">
+                  <div class="stars-row">★★★★★</div>
+                  <div class="stars-label">from 800+ reviews</div>
+                </div>
+              </div>
+              <div class="progress-list">
+                <div class="progress-item">
+                  <div class="progress-meta"><span>Mobile Repair</span><span>98%</span></div>
+                  <div class="progress-track"><div class="progress-fill" style="--width:0.98"></div></div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-meta"><span>Laptop Repair</span><span>96%</span></div>
+                  <div class="progress-track"><div class="progress-fill" style="--width:0.96"></div></div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-meta"><span>PC Builds</span><span>100%</span></div>
+                  <div class="progress-track"><div class="progress-fill" style="--width:1.0"></div></div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-meta"><span>Networking</span><span>97%</span></div>
+                  <div class="progress-track"><div class="progress-fill" style="--width:0.97"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ TESTIMONIALS ═══ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header text-center reveal" style="margin:0 auto 64px;">
+          <span class="section-label">Testimonials</span>
+          <h2>Loved by Customers</h2>
+          <p>Don't just take our word for it — here's what real customers say.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="glass-card testimonial-card reveal reveal-delay-1">
+            <div class="testimonial-stars">★★★★★</div>
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">My phone had a completely shattered screen and water damage. FixHussle had it fixed in 3 hours and it looks factory-new. Incredible service and very transparent pricing.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AR</div>
+              <div>
+                <div class="author-name">Ananya Reddy</div>              
+              </div>
+            </div>
+          </article>
+
+          <article class="glass-card testimonial-card reveal reveal-delay-2">
+            <div class="testimonial-stars">★★★★★</div>
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">Set up a full LAN network for our 25-person office in a single day. The team was professional, fast, and the connection is flawless. Highly recommend their networking services.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">KM</div>
+              <div>
+                <div class="author-name">Karthik Menon</div>
+            </div>
+          </article>
+
+          <article class="glass-card testimonial-card reveal reveal-delay-3">
+            <div class="testimonial-stars">★★★★★</div>
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">Brought in my 4-year-old laptop that was overheating constantly. They replaced the thermal paste, upgraded the SSD, and now it runs faster than the day I bought it.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">PS</div>
+              <div>
+                <div class="author-name">Priya Sharma</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CTA BANNER ═══ -->
+    <section class="section" style="padding:60px 0 120px;">
+      <div class="container">
+        <div class="glass-card reveal" style="padding:64px;text-align:center;background:linear-gradient(135deg,rgba(41,121,255,0.1),rgba(0,229,255,0.06));border-color:rgba(41,121,255,0.2);position:relative;overflow:hidden;">
+          <div style="position:absolute;top:-60px;right:-60px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(41,121,255,0.2),transparent 70%);pointer-events:none;"></div>
+          <div style="position:absolute;bottom:-40px;left:-40px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(0,229,255,0.15),transparent 70%);pointer-events:none;"></div>
+          <span class="section-label" style="justify-content:center;margin-bottom:20px;">Get Started Today</span>
+          <h2 style="margin-bottom:16px;">Ready to Fix Your Device?</h2>
+          <p style="max-width:480px;margin:0 auto 36px;font-size:1.1rem;">Book online in under 2 minutes. We'll confirm within the hour and get your tech back to perfect.</p>
+          <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+            <a href="booking.html" class="btn btn-primary btn-lg">Book a Repair Now</a>
+            <a href="contact.html" class="btn btn-ghost btn-lg">Talk to an Expert</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">FixHussle</div>
+          <p>Premium tech repair &amp; networking services. We fix what others can't — fast, reliably, affordably.</p>
+          <div class="footer-social">
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="services.html">Mobile Repair</a></li>
+            <li><a href="services.html">Laptop Repair</a></li>
+            <li><a href="services.html">PC Repair &amp; Build</a></li>
+            <li><a href="services.html">Network Setup</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul class="footer-links">
+            <li><a href="tel:+919449205239">+91 94492 05239</a></li>
+            <li><a href="mailto:fixhussle@gmail.com">fixhussle@gmail.com</a></li>
+            <li><a href="#">Vijayanagar, Bengaluru</a></li>
+            <li><a href="#">Mon–Sat · 9am–8pm</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2025 FixHussle. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Warranty</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

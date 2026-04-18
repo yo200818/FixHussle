@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FixHussle Services — Phone, laptop, PC repair and professional networking setup in Bengaluru." />
+  <title>Services — FixHussle</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- Particle canvas -->
+  <canvas id="particles-canvas" style="position:fixed;inset:0;pointer-events:none;z-index:0;opacity:0.5;"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">FixHussle</a>
+      <ul class="nav-links">
+        <li><a href="booking.html">Book Now</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="booking.html" class="btn btn-primary btn-sm">Book a Repair</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="booking.html">Book Now</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-cta">
+      <a href="booking.html" class="btn btn-primary" style="width:100%;justify-content:center;">Book a Repair</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ═══ PAGE HERO ═══ -->
+    <div class="page-hero">
+      <div class="container">
+        <span class="section-label reveal" style="justify-content:center;">What We Do</span>
+        <h1 class="reveal reveal-delay-1">Our <span class="text-gradient">Services</span></h1>
+        <p class="reveal reveal-delay-2">Comprehensive tech repair and infrastructure services — all under one roof. Transparent pricing, expert technicians, and a warranty you can trust.</p>
+      </div>
+    </div>
+
+    <!-- ═══ SERVICES FULL ═══ -->
+    <section class="section" style="padding-top:40px;">
+      <div class="container">
+        <div class="services-full-grid">
+
+          <!-- Mobile -->
+          <article class="glass-card service-full-card reveal reveal-delay-1" id="mobile">
+            <div class="service-full-card-header">
+              <div class="service-full-title">
+                <h3>Mobile Phone Repair</h3>
+                <span class="price-badge">Starting ₹499</span>
+              </div>
+            </div>
+            <p class="service-full-desc">
+              We repair all major brands — Apple, Samsung, OnePlus, Xiaomi, OPPO, Vivo and more.
+              Our certified technicians handle every type of issue with precision tools and genuine parts,
+              ensuring your phone performs exactly as the manufacturer intended.
+            </p>
+            <ul class="service-features">
+              <li>Screen &amp; display replacement (LCD, AMOLED, OLED)</li>
+              <li>Battery replacement &amp; health restoration</li>
+              <li>Charging port &amp; speaker repair</li>
+              <li>Back glass &amp; frame replacement</li>
+              <li>Front &amp; rear camera repair</li>
+              <li>Software issues, bootloop &amp; data recovery</li>
+            </ul>
+            <a href="booking.html" class="btn btn-primary" data-book-service="mobile">
+              Book Mobile Repair
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M2 7.5h11M9 3l4 4.5L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </article>
+
+          <!-- Laptop -->
+          <article class="glass-card service-full-card reveal reveal-delay-2" id="laptop">
+            <div class="service-full-card-header">
+              <div class="service-full-title">
+                <h3>Laptop Repair &amp; Upgrade</h3>
+                <span class="price-badge">Starting ₹799</span>
+              </div>
+            </div>
+            <p class="service-full-desc">
+              Whether your laptop is slow, overheating, has a broken screen, or won't power on —
+              we diagnose and resolve the root cause, not just the symptom. We service Dell, HP, Lenovo,
+              Apple MacBook, Asus, Acer and all other brands.
+            </p>
+            <ul class="service-features">
+              <li>Laptop screen replacement (HD, FHD, 4K)</li>
+              <li>Keyboard &amp; trackpad replacement</li>
+              <li>Thermal paste refresh &amp; fan cleaning</li>
+              <li>SSD upgrade &amp; RAM expansion</li>
+              <li>Motherboard-level repair &amp; soldering</li>
+              <li>OS reinstallation (Windows, macOS, Linux)</li>
+              <li>Virus removal &amp; performance optimization</li>
+            </ul>
+            <a href="booking.html" class="btn btn-primary" data-book-service="laptop">
+              Book Laptop Repair
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M2 7.5h11M9 3l4 4.5L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </article>
+
+          <!-- PC -->
+          <article class="glass-card service-full-card reveal reveal-delay-3" id="pc">
+            <div class="service-full-card-header">
+              <div class="service-full-title">
+                <h3>PC Repair &amp; Custom Build</h3>
+                <span class="price-badge">Starting ₹999</span>
+              </div>
+            </div>
+            <p class="service-full-desc">
+              From diagnosing hardware faults to building your dream workstation or gaming rig from scratch —
+              our technicians have deep expertise in desktop systems, workstations, and servers.
+              We also offer annual maintenance contracts for businesses.
+            </p>
+            <ul class="service-features">
+              <li>Custom PC build &amp; assembly</li>
+              <li>GPU, CPU &amp; RAM upgrades</li>
+              <li>PSU replacement &amp; power troubleshooting</li>
+              <li>Storage (HDD/SSD) replacement &amp; RAID setup</li>
+              <li>Cable management &amp; airflow optimization</li>
+              <li>Driver updates &amp; BIOS configuration</li>
+              <li>Overclocking &amp; performance tuning</li>
+            </ul>
+            <a href="booking.html" class="btn btn-primary" data-book-service="pc">
+              Book PC Service
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M2 7.5h11M9 3l4 4.5L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </article>
+
+          <!-- Networking -->
+          <article class="glass-card service-full-card reveal reveal-delay-4" id="networking">
+            <div class="service-full-card-header">
+              <div class="service-full-title">
+                <h3>Network &amp; IT Setup</h3>
+                <span class="price-badge">Starting ₹1,999</span>
+              </div>
+            </div>
+            <p class="service-full-desc">
+              We design, install, and maintain robust network infrastructure for homes, startups, and
+              large offices. From simple WiFi optimization to full enterprise LAN/WAN deployments —
+              we've got the expertise to keep you connected at peak performance.
+            </p>
+            <ul class="service-features">
+              <li>Home WiFi setup &amp; mesh network deployment</li>
+              <li>Office LAN cabling &amp; patch panel installation</li>
+              <li>Router, switch &amp; firewall configuration</li>
+              <li>VPN setup for remote teams</li>
+              <li>CCTV &amp; IP camera network integration</li>
+              <li>IT AMC (Annual Maintenance Contracts)</li>
+            </ul>
+            <a href="booking.html" class="btn btn-primary" data-book-service="networking">
+              Book Network Setup
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M2 7.5h11M9 3l4 4.5L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PROCESS ═══ -->
+    <section class="section" style="background:linear-gradient(180deg,transparent,rgba(41,121,255,0.03),transparent);">
+      <div class="container">
+        <div class="section-header text-center reveal" style="margin:0 auto 64px;">
+          <span class="section-label">How It Works</span>
+          <h2>Repair in 3 Simple Steps</h2>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px;">
+          <div class="glass-card reveal reveal-delay-1" style="padding:36px;text-align:center;">
+            <div style="width:56px;height:56px;border-radius:50%;background:rgba(41,121,255,0.15);border:1px solid rgba(41,121,255,0.3);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.1rem;font-weight:800;color:var(--accent-cyan);margin:0 auto 20px;">1</div>
+            <h3 style="font-size:1.1rem;margin-bottom:10px;">Book Online</h3>
+            <p style="font-size:0.9rem;">Fill out our quick booking form with your device details and preferred time slot.</p>
+          </div>
+          <div class="glass-card reveal reveal-delay-2" style="padding:36px;text-align:center;">
+            <div style="width:56px;height:56px;border-radius:50%;background:rgba(41,121,255,0.15);border:1px solid rgba(41,121,255,0.3);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.1rem;font-weight:800;color:var(--accent-cyan);margin:0 auto 20px;">2</div>
+            <h3 style="font-size:1.1rem;margin-bottom:10px;">Free Diagnosis</h3>
+            <p style="font-size:0.9rem;">Our tech runs a thorough diagnostic and provides a transparent quote. No hidden charges.</p>
+          </div>
+          <div class="glass-card reveal reveal-delay-3" style="padding:36px;text-align:center;">
+            <div style="width:56px;height:56px;border-radius:50%;background:rgba(41,121,255,0.15);border:1px solid rgba(41,121,255,0.3);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.1rem;font-weight:800;color:var(--accent-cyan);margin:0 auto 20px;">3</div>
+            <h3 style="font-size:1.1rem;margin-bottom:10px;">Get It Back</h3>
+            <p style="font-size:0.9rem;">Collect your repaired device same day with a 90-day warranty certificate included.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ BOTTOM CTA ═══ -->
+    <section class="section" style="padding-top:0;padding-bottom:100px;">
+      <div class="container">
+        <div class="glass-card reveal" style="padding:56px;text-align:center;background:linear-gradient(135deg,rgba(41,121,255,0.08),rgba(0,229,255,0.04));border-color:rgba(41,121,255,0.2);">
+          <h2 style="margin-bottom:12px;">Not Sure What You Need?</h2>
+          <p style="max-width:480px;margin:0 auto 32px;">Call us or drop in for a free consultation. Our technicians will assess your device and recommend the best course of action.</p>
+          <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+            <a href="booking.html" class="btn btn-primary btn-lg">Book a Repair</a>
+            <a href="tel:+919449205239" class="btn btn-ghost btn-lg">Call Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">FixHussle</div>
+          <p>Premium tech repair &amp; networking services in Bengaluru.</p>
+          <div class="footer-social">
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="#mobile">Mobile Repair</a></li>
+            <li><a href="#laptop">Laptop Repair</a></li>
+            <li><a href="#pc">PC Repair</a></li>
+            <li><a href="#networking">Network Setup</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul class="footer-links">
+            <li><a href="tel:+919449205239">+91 94492 05239</a></li>
+            <li><a href="mailto:fixhussle@gmail.com">fixhussle@gmail.com</a></li>
+            <li><a href="#">Vijayanagar, Bengaluru</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2025 FixHussle. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

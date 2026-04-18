@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact FixHussle — get in touch for repairs, quotes, or partnership inquiries." />
+  <title>Contact — FixHussle</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <canvas id="particles-canvas" style="position:fixed;inset:0;pointer-events:none;z-index:0;opacity:0.5;"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">FixHussle</a>
+      <ul class="nav-links">
+        <li><a href="booking.html">Book Now</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="booking.html" class="btn btn-primary btn-sm">Book a Repair</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="booking.html">Book Now</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-cta">
+      <a href="booking.html" class="btn btn-primary" style="width:100%;justify-content:center;">Book a Repair</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+      <div class="container">
+        <span class="section-label reveal" style="justify-content:center;">Get in Touch</span>
+        <h1 class="reveal reveal-delay-1">We're Here to <span class="text-gradient">Help</span></h1>
+        <p class="reveal reveal-delay-2">Have a question, need a quote, or want to talk to an expert? Reach out — we typically respond within 30 minutes during business hours.</p>
+      </div>
+    </div>
+
+    <!-- ═══ CONTACT LAYOUT ═══ -->
+    <section class="section" style="padding-top:40px;">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Info + Map -->
+          <aside class="contact-info reveal">
+            <h2>Contact Information</h2>
+            <p>Visit our studio, call us, or drop a message. We're always happy to help with any tech problem, big or small.</p>
+
+            <div class="contact-items">
+              <div class="contact-item">
+                <div class="contact-item-icon">📞</div>
+                <div class="contact-item-text">
+                  <strong>Phone</strong>
+                  <span>+91 94492 05239</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon">✉️</div>
+                <div class="contact-item-text">
+                  <strong>Email</strong>
+                  <span>fixhussle@Gmail.com</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon">📍</div>
+                <div class="contact-item-text">
+                  <strong>Address</strong>
+                  <span>Vijayanagar, Bengaluru — 560026</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon">🕐</div>
+                <div class="contact-item-text">
+                  <strong>Working Hours</strong>
+                  <span>Mon–Sat: 9:00 AM – 8:00 PM</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon">💬</div>
+                <div class="contact-item-text">
+                  <strong>WhatsApp</strong>
+                  <span>+91 94492 05239 (Quick Responses)</span>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Contact Form -->
+          <div class="glass-card contact-form-card reveal reveal-delay-2">
+
+            <div class="contact-form-content">
+              <h3 style="margin-bottom:8px;">Send Us a Message</h3>
+              <p style="margin-bottom:32px;font-size:0.9rem;">We reply within 30 minutes during business hours.</p>
+
+              <form id="contact-form" novalidate>
+                <div class="form-grid">
+
+                  <div class="form-group">
+                    <label for="contact_name">Full Name</label>
+                    <input
+                      type="text"
+                      id="contact_name"
+                      name="contact_name"
+                      placeholder="Your name"
+                      autocomplete="name"
+                    />
+                    <span class="error-msg" role="alert"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contact_email">Email Address</label>
+                    <input
+                      type="email"
+                      id="contact_email"
+                      name="contact_email"
+                      placeholder="you@email.com"
+                      autocomplete="email"
+                    />
+                    <span class="error-msg" role="alert"></span>
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label for="contact_subject">Subject</label>
+                    <input
+                      type="text"
+                      id="contact_subject"
+                      name="contact_subject"
+                      placeholder="What's this about?"
+                    />
+                    <span class="error-msg" role="alert"></span>
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label for="contact_message">Message</label>
+                    <textarea
+                      id="contact_message"
+                      name="contact_message"
+                      placeholder="Tell us more about your query, device issue, or partnership idea…"
+                      rows="5"
+                    ></textarea>
+                    <span class="error-msg" role="alert"></span>
+                  </div>
+
+                </div>
+
+                <div class="form-submit-row">
+                  <button type="submit" class="btn btn-primary btn-lg btn-submit">
+                    <span class="submit-text">
+                      Send Message
+                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M2 7.5h11M9 3l4 4.5L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <span class="submit-spinner"></span>
+                  </button>
+                  <p class="form-privacy">🔒 We respect your privacy.</p>
+                </div>
+              </form>
+            </div>
+
+            <!-- Success message -->
+            <div class="contact-success success-message" role="status" aria-live="polite">
+              <div class="success-icon">✅</div>
+              <h3>Message Sent!</h3>
+              <p style="margin-top:12px;color:var(--text-secondary);max-width:340px;margin-left:auto;margin-right:auto;">
+                Thanks for reaching out! We've received your message and will get back to you within 30 minutes during business hours.
+              </p>
+              <div style="margin-top:32px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+                <a href="index.html" class="btn btn-ghost">Back to Home</a>
+                <a href="booking.html" class="btn btn-primary">Book a Repair</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SOCIAL STRIP ═══ 
+    /<section class="section" style="padding-top:0;padding-bottom:100px;">
+      <div class="container">
+        <div class="glass-card reveal" style="padding:48px;text-align:center;">
+          <h3 style="margin-bottom:8px;">Follow Our Work</h3>
+          <p style="margin-bottom:32px;max-width:420px;margin-left:auto;margin-right:auto;">Stay updated with repair tips, behind-the-scenes looks, and special offers. Find us on social media.</p>
+          <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+            <a href="#" class="btn btn-ghost">𝕏 Twitter</a>
+            <a href="#" class="btn btn-ghost">📸 Instagram</a>
+            <a href="#" class="btn btn-ghost">in LinkedIn</a>
+            <a href="#" class="btn btn-ghost">💬 WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">FixHussle</div>
+          <p>Premium tech repair &amp; networking services in Bengaluru.</p>
+          <div class="footer-social">
+
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="services.html">Mobile Repair</a></li>
+            <li><a href="services.html">Laptop Repair</a></li>
+            <li><a href="services.html">PC Repair</a></li>
+            <li><a href="services.html">Network Setup</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul class="footer-links">
+            <li><a href="tel:+919876543210">+91 9449205239</a></li>
+            <li><a href="mailto:fixhussle@gmail.com">fixhussle@gmail.com</a></li>
+            <li><a href="#">Vijayanagar, Bengaluru</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2025 FixHussle. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
